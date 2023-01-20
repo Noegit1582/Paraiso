@@ -1,0 +1,84 @@
+h1{ font-size: 50px;
+     color: white;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     text-align: center;
+     letter-spacing: 2px;
+     background-color: black;
+}
+h2{color: gray;
+     font-style: oblique;
+     text-align: center;
+     text-emphasis: black;
+
+}
+ul{list-style: none;
+     background-color: gray;
+     display: flex;
+     justify-content:space-around;
+     color: black;
+     font-size: 15px;
+     padding: 5px;
+}
+a{color: black;
+
+ }
+li{
+     color: black;
+}
+
+
+main{background-color: black;
+     color: aliceblue;
+     display: flex;
+     justify-content:space-around;
+
+}
+
+section{
+     display:list-item;
+     justify-content:left;
+     align-items: stretch;
+     
+}
+h3{
+     background-color: black; 
+     color: aliceblue;
+     size: 42px;
+     font-style: oblique;
+     letter-spacing: 3px;
+     text-align: center;
+}
+h4,h5,h6{
+     font-size: medium;
+     color: darkolivegreen;
+     background-color: beige;
+     padding:10px ;
+     border-color: black;
+     border-style: solid;
+}
+footer{
+     border-color: black;
+     border-style:double;
+     border-width: 2px;
+     background-color: darkolivegreen;
+     margin-top: 20px;
+     padding-left: 10px;
+     text-align: justify; 
+     font-size: 20px;
+     padding: 15px;
+}
+ul1 {
+     list-style:square;
+     padding-top: 25px;
+}
+p1,p2,p3{
+     color: black;
+     font-weight: bold;
+     
+}
+ul3 {
+     list-style: none;
+     display:grid;
+     align-items: center;
+}
+
