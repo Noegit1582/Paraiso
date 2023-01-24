@@ -1,23 +1,32 @@
 h1{ font-size: 50px;
-     color: white;
-     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     color: black;
      text-align: center;
-     letter-spacing: 2px;
-     background-color: black;
+     letter-spacing: 4px;
+     background-color: turquoise;
+     font-family: 'Pacifico', cursive;
+     padding: 20px;
+     margin-top: 0%;
+     margin-bottom: 0%;
 }
-h2{color: gray;
+h2{color: rgb(54, 45, 45);
      font-style: oblique;
      text-align: center;
      text-emphasis: black;
+     background-color: turquoise;
+     margin-top: 0%;
+     margin-bottom: 0%;
+     padding-bottom: 15px;
 
 }
 ul{list-style: none;
-     background-color: gray;
+     background-color: greenyellow;
      display: flex;
      justify-content:space-around;
      color: black;
      font-size: 15px;
-     padding: 5px;
+     padding: 15px;
+     margin-top: 0%;
+     margin-bottom: 0%;
 }
 a{color: black;
 
@@ -27,7 +36,7 @@ li{
 }
 
 
-main{background-color: black;
+main{background-color: turquoise;
      color: aliceblue;
      display: flex;
      justify-content:space-around;
@@ -38,11 +47,12 @@ section{
      display:list-item;
      justify-content:left;
      align-items: stretch;
+     margin-bottom: 0%;
      
 }
 h3{
-     background-color: black; 
-     color: aliceblue;
+     background-color: turquoise; 
+     color: black;
      size: 42px;
      font-style: oblique;
      letter-spacing: 3px;
@@ -57,15 +67,15 @@ h4,h5,h6{
      border-style: solid;
 }
 footer{
-     border-color: black;
+     border-color: greenyellow;
      border-style:double;
      border-width: 2px;
-     background-color: darkolivegreen;
-     margin-top: 20px;
+     background-color: greenyellow;
      padding-left: 10px;
      text-align: justify; 
      font-size: 20px;
      padding: 15px;
+     margin-bottom: 0%;
 }
 ul1 {
      list-style:square;
