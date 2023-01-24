@@ -30,13 +30,13 @@ ul{list-style: none;
 }
 a{color: black;
 
- }
+}
 li{
      color: black;
 }
 
 
-main{background-color: turquoise;
+main{background-color: brown;
      color: aliceblue;
      display: flex;
      justify-content:space-around;
@@ -92,3 +92,20 @@ ul3 {
      align-items: center;
 }
 
+.grid-container{
+     display: grid;
+     grid-template-columns: 2fr 2fr 2fr;
+     grid-template-rows: 2fr 2fr 2fr;
+}
+.grid-container div{
+
+     color: antiquewhite;
+     border: 1px solid black;
+}
+.inicio{
+     display: grid;
+     grid-template-columns: 4fr 2fr;
+     grid-template-rows: auto auto ;
+     font-size: 25px;
+     padding: 20px;
+}
