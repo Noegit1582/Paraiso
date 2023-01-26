@@ -33,10 +33,12 @@ a{color: black;
 }
 li{
      color: black;
+     font-size: 25px;
+     text-decoration: none;
 }
 
 
-main{background-color: brown;
+main{background-color: rgb(20, 90, 41);
      color: aliceblue;
      display: flex;
      justify-content:space-around;
@@ -50,6 +52,7 @@ section{
      margin-bottom: 0%;
      
 }
+
 h3{
      background-color: turquoise; 
      color: black;
@@ -58,6 +61,7 @@ h3{
      letter-spacing: 3px;
      text-align: center;
 }
+
 h4,h5,h6{
      font-size: medium;
      color: darkolivegreen;
@@ -66,6 +70,7 @@ h4,h5,h6{
      border-color: black;
      border-style: solid;
 }
+
 footer{
      border-color: greenyellow;
      border-style:double;
@@ -73,23 +78,66 @@ footer{
      background-color: greenyellow;
      padding-left: 10px;
      text-align: justify; 
-     font-size: 20px;
+     font-size: 35px;
      padding: 15px;
      margin-bottom: 0%;
 }
-ul1 {
+
+.ul1 {
      list-style:square;
      padding-top: 25px;
 }
-p1,p2,p3{
-     color: black;
-     font-weight: bold;
-     
+
+.p1,p2,p3{
+     color:aliceblue;
+     font-size: 18px;   
+     padding-left: 10px;  
 }
-ul3 {
+
+.ul3{
      list-style: none;
-     display:grid;
-     align-items: center;
+     padding: 0;
+     margin: 0;
+     color:darkgreen;
+
+}
+
+.fomr li1 + li2+ li3 {
+     margin-top: 20px;
+     display: flex;
+     align-items: flex-start;
+
+}
+
+label{
+     display:flex;
+     flex-direction: column;
+     width: 400px;
+     text-align: left;
+     font-size: 25px;
+     margin-bottom: 15px;
+}
+
+textarea{
+     font-size: 1em;
+     font-family: sans-serif;
+     width: 300px;
+     border: 1px solid black;
+     vertical-align: top;
+     height: 5em;
+     margin-top: 20px;
+}
+
+input:focus, textarea:focus{
+     border-color: grey; 
+}
+
+button{
+     padding-left: 90px;
+     margin-left: 5em;
+     text-align: center;
+     font-size: 18px;
+     margin-top: 10px;
 }
 
 .grid-container{
@@ -97,15 +145,60 @@ ul3 {
      grid-template-columns: 2fr 2fr 2fr;
      grid-template-rows: 2fr 2fr 2fr;
 }
+
 .grid-container div{
 
      color: antiquewhite;
-     border: 1px solid black;
+     border: 1px double black;
+     padding: 35px;
+     color: rgb(168, 101, 101);
 }
+
 .inicio{
      display: grid;
      grid-template-columns: 4fr 2fr;
      grid-template-rows: auto auto ;
      font-size: 25px;
      padding: 20px;
+}
+
+p{
+     font-size: 25px;
+     letter-spacing: 2px;
+     word-spacing: 5px;
+     margin: 5px;
+}
+
+.form{
+     margin: 0 auto;
+     width: 400px;
+     padding: 5px;
+     border-radius: 4px black;
+     border-bottom: 2px violet;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     color:rgb(20, 90, 41)
+}
+input{
+     width:300px;
+     height: 2em;
+}
+.extra{
+     font-size: 20px;
+     padding-top: 15px;
+     color: aliceblue;
+     padding-bottom: 10px;
+     padding-left: 10px;
+}
+.p5{
+
+     padding-top: 10px;
+     padding-bottom: 30px;
+}
+.eventos{
+     background-color: rgb(11, 41, 11);
+     color: aliceblue;
+     margin: 5px;
+     padding-left: 5px;
 }
