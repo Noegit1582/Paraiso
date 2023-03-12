@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: border-box;
+  border: 1px solid blue;
+}
+
+main {
+  background-color: rgb(200, 196, 204);
+  width: auto;
+  height: 60vw;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+.danielFoto {
+  border-radius: 20px;
+  border: 1px solid white;
+}
+#daniel {
+  display: flex;
+  flex-wrap: wrap;
+  color: aliceblue;
+  background-color: blueviolet;
+  padding: 10px;
+}
+
+/* 
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+@include media-breakpoint-up(sm) {
+  ...;
+}
+@include media-breakpoint-up(md) {
+  ...;
+}
+@include media-breakpoint-up(lg) {
+  ...;
+}
+@include media-breakpoint-up(xl) {
+  ...;
+}
+@include media-breakpoint-up(xxl) {
+  ...;
+} */
