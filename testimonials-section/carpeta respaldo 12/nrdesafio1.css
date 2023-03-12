@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/***VISTA DESKTOP***/
+
+body {
+  background-image: url(./bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 20em;
+  width: 95vw;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 75%;
+  display: grid;
+  grid-template-columns: 2 auto;
+  grid-template-rows: 1 auto;
+  grid-template-areas: "tarjetas form";
+}
+
+form {
+  grid-area: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* align-items: center; */
+  font-size: 1.125em;
+  font-family: Space Grotesk;
+  margin-right: 3em;
+  margin-left: 0;
+  margin-top: 6.25em;
+  padding: 2em;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  color: rgb(172, 156, 187);
+  font-family: Space Grotesk;
+  font-size: 1.125em;
+  background-color: rgb(63, 9, 58);
+  width: 20em;
+  height: 2em;
+  border-radius: 0.313em;
+  margin-top: 0.625em;
+  padding-top: 0.313em;
+  transition: bacground-color blue;
+  transition: color rgb(172, 156, 187);
+  border-bottom: none;
+}
+
+button:hover {
+  background-color: violet;
+  color: rgb(39, 37, 37);
+}
+
+.card_front {
+  background-image: url(./bg-card-front.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  display: flex;
+  text-align: center;
+  color: aliceblue;
+  z-index: 1;
+  width: 25em;
+  height: 14em;
+  margin: 4em 0px 1.25px 4em;
+}
+
+.icono {
+  position: absolute;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.back {
+  background-image: url(./bg-card-back.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 25em;
+  height: 14em;
+  position: relative;
+  display: flex;
+  text-align: center;
+  color: aliceblue;
+}
+
+.nb {
+  position: absolute;
+  margin-top: 5.063em;
+  margin-bottom: 1.875em;
+  margin-left: 1.375em;
+  font-size: 1.5em;
+  font-family: Space Grotesk;
+  letter-spacing: 1px;
+  word-spacing: 0.375em;
+}
+
+.nombre {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 11em;
+  margin-left: 1.375em;
+  font-family: Space Grotesk;
+  height: 15%;
+}
+
+.vc {
+  position: relative;
+  color: aliceblue;
+  margin-top: 6.25em;
+  margin-left: 20em;
+}
+
+.back {
+  margin: 1.25em 0px 0px 8em;
+}
+
+label {
+  margin-bottom: 1.25em;
+}
+
+input {
+  border: 1px solid hsl(249, 99%, 64%);
+  border-radius: 3px;
+  font-size: 0.75em;
+  padding: 0.75em;
+  width: 30em;
+  margin-top: 0.5em;
+  border-top-color: rgb(145, 141, 141);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  box-shadow: 2px 2px 0px grey;
+}
+input:focus {
+  background-color: rgb(210, 214, 214);
+}
+
+.exp {
+  display: flex;
+  justify-content: left;
+  justify-content: flex-start;
+  height: 5em;
+  width: 22.5em;
+  margin-top: 1em;
+}
+
+.cvc {
+  height: 1.5em;
+  width: 4em;
+  margin-right: 3em;
+  margin-bottom: 8px;
+}
+
+.numbercc {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-top: 0px;
+}
+
+.exp_input {
+  width: 5em;
+  height: 3em;
+  margin-top: 0.8em;
+  margin-right: 1px;
+  display: inline-flex;
+  justify-content: space-evenly;
+  margin-inline: 5px;
+}
+
+.cvc_input {
+  width: 8em;
+  height: 3em;
+  margin-top: 0px;
+}
+
+.eg123 {
+  display: flex;
+  flex-direction: column;
+  height: 4em;
+}
+.cad {
+  margin-left: 10em;
+}
+fieldset {
+  border: none;
+  width: 15em;
+}
+
+/****VISTA MOBILE****/
+
+@media (max-width: 728px) {
+  body {
+    background-image: url(./bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+
+  main {
+    width: 85%;
+    height: 85%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+  }
+
+  .back {
+    position: absolute;
+    background-image: url(./bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 16em;
+    height: 11em;
+    color: aliceblue;
+    margin: 0;
+    margin-top: 35px;
+    margin-left: 80px;
+  }
+
+  .card_front {
+    background-image: url(./bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 16em;
+    height: 11em;
+    position: relative;
+    z-index: 3;
+    margin: 120px 0px 0px 30px;
+  }
+
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    margin-top: 0;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1em;
+    font-family: "Space Grotesk", sans-serif;
+    margin-left: 1em;
+    font-size: 1em;
+    width: 60%;
+  }
+
+  .exp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "legend legend cvc"
+      "month year cvc_input";
+    margin-top: 0.938em;
+    margin-bottom: 0.938em;
+    width: 3em;
+  }
+
+  legend {
+    grid-area: "label1";
+    width: 12em;
+  }
+
+  input {
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 1.25em;
+  }
+
+  .month {
+    grid-area: "month";
+  }
+
+  .year {
+    grid-area: "year";
+  }
+
+  .cvc {
+    grid-area: "cvc";
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(172, 156, 187);
+    font-family: Space Grotesk;
+    font-size: 1.125em;
+    background-color: rgb(63, 9, 58);
+    width: 10em;
+    height: 2em;
+    border-radius: 0.313em;
+    margin-top: 1em;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    padding-top: 0.313em;
+    transition: color rgb(172, 156, 187);
+  }
+
+  button:hover {
+    background-color: violet;
+    color: black;
+  }
+
+  .vc {
+    margin-top: 3.5em;
+    margin-left: 12em;
+  }
+  .nombre {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-top: 6.5em;
+    margin-left: 1.375em;
+    font-family: Space Grotesk;
+    color: aliceblue;
+  }
+
+  .nb {
+    position: absolute;
+    margin-top: 4.563em;
+    margin-left: 1.375em;
+    font-size: 1em;
+    font-family: Space Grotesk;
+    letter-spacing: 1px;
+    word-spacing: 6px;
+    color: aliceblue;
+  }
+  .icono {
+    position: absolute;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+
+  img {
+    width: 2em;
+  }
+
+  input {
+    border: 1px solid hsl(250, 2%, 48%);
+    border-radius: 3px;
+    font-size: 0.75em;
+    padding: 0.75em;
+    width: 23em;
+    margin-top: 0.5em;
+    border-top-color: rgb(145, 141, 141);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  .exp_input {
+    width: 5em;
+    height: 3em;
+    margin-top: 0.5em;
+  }
+
+  .cvc_input {
+    width: 6em;
+    height: 3em;
+    margin-top: 0em;
+  }
+
+  .exp {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    height: 5em;
+    margin-top: 1em;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .cad {
+    margin-left: 1.8em;
+  }
+  .eg123 {
+    display: flex;
+    flex-direction: column;
+    height: 4em;
+    margin: 0px;
+  }
+}

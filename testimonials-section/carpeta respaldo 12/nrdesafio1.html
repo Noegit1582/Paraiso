@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nrdesafio1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@700&family=Pacifico&family=Space+Grotesk:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="tarjetas">
+            <article class="card_front">
+                <div class="nb">0000 0000 0000 0000</div>
+                <div class="nombre">
+                    <p> JANE APPLESED</p>
+                    <p class="cad"> 00/00</p>
+                </div>
+                <div class="icono"><img src="./card-logo.svg" alt=""></div>
+            </article>
+            <article class="back">
+                <div class="vc">000</div>
+            </article>
+        </section>
+        <form action="input">
+            <section class="datos">
+                <label for="name">CARDHOLDER NAME</label> <br>
+                <input type="text" name="full name" placeholder="e.g. Jane Appleseed" required id="full name"><br>
+                <br>
+                <label for="card_number">CARD NUMBER</label> <br>
+                <input type="number" name="CARD NUMBER" placeholder="e.g.1234 5678 9123 0000" required id="card_number">
+            </section>
+            <article class="exp">
+                <fieldset>
+                    <legend>EXP. DATE (MM/YY)</legend>
+                    <input class="exp_input" name='MM' type='number' placeholder="MM" required>
+                    <input class="exp_input" name='YY' type='number' placeholder="YY" required>
+                </fieldset>
+                <div class="eg123">
+                    <label class="cvc" for="cvc">CVC</label>
+                    <input class="cvc_input" type="number" name="CVC" placeholder="e.g. 123" required>
+                </div>
+
+            </article>
+            <button type="submit">Confirm</button>
+        </form>
+
+    </main>
+</body>
+
+</html>
